@@ -13,6 +13,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -116,6 +119,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ctTVR04rxl5P6Og7PIlK5US7oQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -155,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591346913055</updated>
       <workItem from="1591346914661" duration="1925000" />
-      <workItem from="1591350865549" duration="64000" />
+      <workItem from="1591350865549" duration="737000" />
     </task>
     <servers />
   </component>
