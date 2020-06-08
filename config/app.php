@@ -164,6 +164,9 @@ return [
         Overtrue\LaravelLang\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        //==============add by editor start=======================//
+//        Mews\Captcha\CaptchaServiceProvider::class,
+        //==============add by editor  end=======================//
 
         /*
          * Package Service Providers...
@@ -226,6 +229,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //==============add by editor start=======================//
+//        'Captcha' => Mews\Captcha\Facades\Captcha::class,
+        //==============add by editor  end=======================//
 
     ],
 
