@@ -191,6 +191,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591602599847" />
+    <state width="652" height="446" key="SwitcherDM" timestamp="1591704039048">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="652" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591704039048" />
     <state x="430" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591584316900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -207,9 +211,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591602655075" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591694718767">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591703920900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591694718767" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591703920900" />
   </component>
 </project>
