@@ -165,7 +165,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         //==============add by editor start=======================//
-//        Mews\Captcha\CaptchaServiceProvider::class,
+        Mews\Captcha\CaptchaServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
         //==============add by editor  end=======================//
 
         /*
@@ -230,7 +231,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         //==============add by editor start=======================//
-//        'Captcha' => Mews\Captcha\Facades\Captcha::class,
+        'Captcha' => Mews\Captcha\Facades\Captcha::class,
+        'Image' => Intervention\Image\Facades\Image::class,
         //==============add by editor  end=======================//
 
     ],

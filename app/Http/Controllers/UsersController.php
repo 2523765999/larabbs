@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 use App\Handlers\ImageUploadHandlers;
 class UsersController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['show']]);
+    }
+
     public function show(User $user)
     {
         return view('users.show', compact('user'));
@@ -15,6 +20,7 @@ class UsersController extends Controller
 
     public function edit(User $user)
     {
+        $this->authorize('update', $user);
         return view('users.edit', compact('user'));
     }
 
@@ -22,9 +28,10 @@ class UsersController extends Controller
     {
 //        dd($request->avatar);
 //        $user->update($request->all());
+        $this->authorize('update', $user);
         $data = $request->all();
         if ($request->avatar) {
-            $result = $uploader->save($request->avatar, 'avatars', $user->id);
+            $result = $uploader->save($request->avatar, 'avatars', $user->id, 416);
             if ($request) {
                 $data['avatar'] = $result['path'];
             }
