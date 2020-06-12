@@ -1,4 +1,5 @@
 @if (count($topics))
+{{--  {{ dd($topics) }}--}}
   <ul class="list-unstyled">
     @foreach ($topics as $topic)
       <li class="media">
