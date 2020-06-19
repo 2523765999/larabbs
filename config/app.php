@@ -167,6 +167,7 @@ return [
         //==============add by editor start=======================//
         Mews\Captcha\CaptchaServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        HieuLe\Active\ActiveServiceProvider::class,
         //==============add by editor  end=======================//
 
         /*
@@ -233,6 +234,7 @@ return [
         //==============add by editor start=======================//
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Active' => HieuLe\Active\Facades\Active::class,
         //==============add by editor  end=======================//
 
     ],

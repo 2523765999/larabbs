@@ -132,6 +132,7 @@
       <path value="$PROJECT_DIR$/vendor/summerblue/generator" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/hieu-le/active" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ctTVR04rxl5P6Og7PIlK5US7oQ" />
@@ -180,6 +181,8 @@
       <workItem from="1591584268298" duration="23850000" />
       <workItem from="1591775542450" duration="8803000" />
       <workItem from="1591843757097" duration="11933000" />
+      <workItem from="1592188809515" duration="1214000" />
+      <workItem from="1592550755169" duration="5312000" />
     </task>
     <servers />
   </component>
@@ -203,10 +206,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="652" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591704039048" />
-    <state x="430" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591843757579">
+    <state x="430" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592550755541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591843757579" />
+    <state x="430" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592550755541" />
     <state x="455" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591602524176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,9 +222,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591844924187" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591860360720">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592559917406">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591860360720" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592559917406" />
   </component>
 </project>
