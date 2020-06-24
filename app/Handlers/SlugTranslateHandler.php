@@ -51,9 +51,11 @@ class SlugTranslateHandler
             ]
         ]
          **/
+        var_dump($result);
         if (!empty($result['trans_result'][0]['dst'])) {
             return str_slug($result['trans_result'][0]['dst']);
         } else {
+            var_dump($this->pinyin($text));
             return $this->pinyin($text);
         }
 
