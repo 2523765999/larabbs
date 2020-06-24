@@ -11,7 +11,14 @@ class ReplyObserver
 {
     public function creating(Reply $reply)
     {
-        //
+        $reply->content = clean($reply->content, 'user_topic_body');
+    }
+
+    public function created(Reply $reply)//我们监控 created 事件，当 Elequont 模型数据成功创建时， created 方法将会被调用
+    {
+//        $reply->topic->increment('reply_count', 1);
+        $reply->topic->reply_count = $reply->topic->replies->count();
+        $reply->topic->save();
     }
 
     public function updating(Reply $reply)

@@ -52,7 +52,7 @@ class TopicsController extends Controller
 	    $topic->save();
 //		$topic = Topic::create($request->all());
 //		return redirect()->route('topics.show', $topic->id)->with('message', 'Created successfully.');
-		return redirect()->to($topic->link())->with('message', 'Created successfully.');
+		return redirect()->to($topic->link())->with('success', 'Created successfully.');
 	}
 
 	public function edit(Topic $topic)
