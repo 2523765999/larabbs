@@ -235,6 +235,7 @@ return [
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Active' => HieuLe\Active\Facades\Active::class,
+        'Str' => Illuminate\Support\Str::class,
         //==============add by editor  end=======================//
 
     ],
