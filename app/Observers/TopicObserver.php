@@ -43,4 +43,11 @@ class TopicObserver
             dispatch(new TranslateSlug($topic));
         }
     }
+
+    public function deleted(Topic $topic)
+    {
+//        \DB::replies()->where('topic_id', $topic->id)->delete();
+//        ↓
+        \DB::table('replies')->where('topic_id', $topic->id)->delete();
+    }
 }
