@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Log;
 use Illuminate\Support\Facades\DB;
+use VIACreative\SudoSu\SudoSu;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,7 +16,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if (app()->isLocal()) {
+//            $this->app->register(SudoSu::class);// 要写全路径 否则报错  In SudoSu.php line 19:
+//  Too few arguments to function VIACreative\SudoSu\SudoSu::__construct(), 1 passed in /home/vagrant/Code/larabbs/vendor/laravel/framework/src/Illuminate/Fo
+//  undation/Application.php on line 662 and exactly 3 expected
+            $this->app->register('VIACreative\SudoSu\ServiceProvider');
+        }
     }
 
     /**
