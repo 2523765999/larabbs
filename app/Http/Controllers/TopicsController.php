@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Link;
 use App\Models\Topic;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -19,13 +20,14 @@ class TopicsController extends Controller
     }
 
 //	public function index()
-	public function index(Request $request, Topic $topic, User $user)
+	public function index(Request $request, Topic $topic, User $user, Link $link)
 	{
 //		$topics = Topic::paginate();//默认是15条的
 //		$topics = Topic::with('user', 'category')->paginate(30);
 		$topics = $topic->withOrder($request->order)->paginate(30);
         $active_users = $user->getActiveUsers();
-		return view('topics.index', compact('topics', 'active_users'));
+        $links = $link->getAllCached();
+		return view('topics.index', compact('topics', 'active_users', 'links'));
 	}
 
     public function show(Topic $topic, Request $request)

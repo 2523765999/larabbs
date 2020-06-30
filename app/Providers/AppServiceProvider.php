@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Link;
 use Illuminate\Support\ServiceProvider;
 use Log;
 use Illuminate\Support\Facades\DB;
@@ -34,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
 		\App\Models\User::observe(\App\Observers\UserObserver::class);
 		\App\Models\Reply::observe(\App\Observers\ReplyObserver::class);
 		\App\Models\Topic::observe(\App\Observers\TopicObserver::class);
-
+        \App\Models\Link::observe(\App\Observers\LinkObserver::class);
         \Carbon\Carbon::setLocale('zh');//diffForhumans() 英语格式转化为中文
 
         DB::listen(function ($query) {
