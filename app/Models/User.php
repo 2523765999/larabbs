@@ -9,6 +9,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract; #modif
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Spatie\Permission\Traits\HasRoles;
+use App\Models\Traits\ActiveUserHelper;
 class User extends Authenticatable implements MustVerifyEmailContract #modify by self
 {
 //    use Notifiable;use MustVerifyEmailTrait;#modify by self
@@ -17,6 +18,7 @@ class User extends Authenticatable implements MustVerifyEmailContract #modify by
         notify as protected laravelNotify;
     }
     use HasRoles;
+    use ActiveUserHelper;
 
     /**
      * The attributes that are mass assignable.
