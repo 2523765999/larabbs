@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Spatie\Permission\Traits\HasRoles;
 use App\Models\Traits\ActiveUserHelper;
+use App\Models\Traits\LastActivedAtHelper;
 class User extends Authenticatable implements MustVerifyEmailContract #modify by self
 {
 //    use Notifiable;use MustVerifyEmailTrait;#modify by self
@@ -19,6 +20,7 @@ class User extends Authenticatable implements MustVerifyEmailContract #modify by
     }
     use HasRoles;
     use ActiveUserHelper;
+    use LastActivedAtHelper;
 
     /**
      * The attributes that are mass assignable.
