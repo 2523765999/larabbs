@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Link;
+use Illuminate\Http\Resources\Json\Resource;
 use Illuminate\Support\ServiceProvider;
 use Log;
 use Illuminate\Support\Facades\DB;
@@ -46,6 +47,7 @@ class AppServiceProvider extends ServiceProvider
             // $query->time
         });
 
-
+        //api 用
+        Resource::withoutWrapping();
     }
 }
