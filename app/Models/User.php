@@ -11,7 +11,9 @@ use Illuminate\Support\Str;
 use Spatie\Permission\Traits\HasRoles;
 use App\Models\Traits\ActiveUserHelper;
 use App\Models\Traits\LastActivedAtHelper;
-class User extends Authenticatable implements MustVerifyEmailContract #modify by self
+use Tymon\JWTAuth\Contracts\JWTSubject;
+
+class User extends Authenticatable implements MustVerifyEmailContract, JWTSubject #modify by self #4.5
 {
 //    use Notifiable;use MustVerifyEmailTrait;#modify by self
     use MustVerifyEmailTrait;#modify by self
@@ -100,5 +102,17 @@ class User extends Authenticatable implements MustVerifyEmailContract #modify by
             $path = config('app.url') . "/uploads/images/avatars/$path";
         }
         $this->attributes['avatar'] = $path;
+    }
+
+    //返回了 User 的 id
+    public  function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    //我们需要额外在 JWT 载荷中增加的自定义内容，这里返回空数组
+    public function getJWTCustomClaims()
+    {
+        return [];
     }
 }
