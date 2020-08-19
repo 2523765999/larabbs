@@ -16,7 +16,7 @@ class Topic extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function ScopeWithOrder($query, $order)
+    public function ScopeWithOrder($query, $order)//Scope 调用方法: (new Model())->query->withOrder | App\Models\Topics::withOrder
     {
         // 不同的排序，使用不同的数据读取逻辑
         switch($order){
@@ -28,7 +28,7 @@ class Topic extends Model
                 break;
         }
         // 预加载防止 N+1 问题
-        return $query->with('user', 'category');
+//        return $query->with('user', 'category');//api L03_6.x 这个分支没有用预加载,在其他地方使用了
     }
 
     public function ScopeRecent($query)
