@@ -29,6 +29,8 @@ class ReplyResource extends JsonResource
 //                "timezone_type": 3,
 //                "timezone": "Asia/Shanghai"
 //            }
+            'user' => new UserResource($this->whenLoaded('user')),
+            'topic' => new TopicResource($this->whenLoaded('topic')),
         ];
     }
 }
